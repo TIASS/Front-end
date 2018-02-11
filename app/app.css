@@ -1,0 +1,30 @@
+@import url("~/platform.css");
+/*
+@import '~nativescript-theme-core/css/aqua.css';
+@import '~nativescript-theme-core/css/blue.css';
+@import '~nativescript-theme-core/css/brown.css';
+@import '~nativescript-theme-core/css/forest.css';
+@import '~nativescript-theme-core/css/grey.css';
+@import '~nativescript-theme-core/css/lemon.css';
+@import '~nativescript-theme-core/css/lime.css';
+@import '~nativescript-theme-core/css/orange.css';
+@import '~nativescript-theme-core/css/ruby.css';
+@import '~nativescript-theme-core/css/sky.css';
+*/
+@import '~nativescript-theme-core/css/purple.css';
+Page {
+  background-color: white;
+  font-size: 15;
+}
+TextField {
+  padding: 10;
+  font-size: 13; 
+}
+
+.small-spacing {
+  margin: 5;
+}
+.medium-spacing {
+  margin: 10;
+}
+  

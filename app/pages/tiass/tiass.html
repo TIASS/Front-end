@@ -1,0 +1,80 @@
+<RadSideDrawer #sidedrawerId tkExampleTitle tkToggleNavButton>
+    <AbsoluteLayout tkMainContent dock="top" >
+         
+    </AbsoluteLayout>
+    <StackLayout tkDrawerContent class="sideStackLayout">
+        <StackLayout class="sideTitleStackLayout">
+            <Label text="Navigation Menu"></Label>
+        </StackLayout>
+        <StackLayout class="sideStackLayout">
+            <Label text="Primary" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Social" class="sideLabel"></Label>
+            <Label text="Promotions" class="sideLabel"></Label>
+            <Label text="Labels" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Important" class="sideLabel"></Label>
+            <Label text="Starred" class="sideLabel"></Label>
+            <Label text="Sent Mail" class="sideLabel"></Label>
+            <Label text="Drafts" class="sideLabel"></Label>
+        </StackLayout>
+        <Label text="Close Drawer" color="lightgray" padding="10"   (tap)="onCloseDrawerTap()"></Label>
+    </StackLayout>
+</RadSideDrawer>
+<!--
+<RadSideDrawer #sidedrawerId tkExampleTitle tkToggleNavButton>
+    <StackLayout tkDrawerContent class="sideStackLayout">
+        <StackLayout class="sideTitleStackLayout">
+            <Label text="Navigation Menu"></Label>
+        </StackLayout>
+
+
+
+        <StackLayout class="sideStackLayout">
+            <Label text="Primary" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Social" class="sideLabel"></Label>
+
+
+            <Label text="Promotions" class="sideLabel"></Label>
+            <Label text="Labels" class="sideLabel sideLightGrayLabel"></Label>
+            <Label text="Important" class="sideLabel"></Label>
+
+
+            <Label text="Starred" class="sideLabel"></Label>
+            <Label text="Sent Mail" class="sideLabel"></Label>
+            <Label text="Drafts" class="sideLabel"></Label>
+        </StackLayout>
+        <Label text="Close Drawer" color="lightgray" padding="10" style="  text-align: left; horizontal-align: center" (tap)="onCloseDrawerTap()"></Label>
+    </StackLayout>
+
+
+
+
+
+
+    <StackLayout tkMainContent>
+            <ActivityIndicator [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" row="1" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
+        <Label [text]="mainContentText" textWrap="true" class="drawerContentText"></Label>
+        <Button text="OPEN DRAWER" (tap)="openDrawer()" class="drawerContentButton"></Button>
+        <TextView 
+        [text]="tvtext" 
+        hint="Enter some text" 
+        returnKeyType="send" 
+        (returnPress)="submit($event)" 
+        editable="false"
+        class="input input-border"></TextView>
+    </StackLayout>
+</RadSideDrawer>
+-->
+<!--
+An uncaught Exception occurred on "main" thread.
+com.tns.NativeScriptException: 
+Calling js method onCreateView failed
+
+TypeError: com.telerik.android.primitives.widget.sidedrawer.RadSideDrawer is not a constructor
+File: "file:///data/data/org.nativescript.TIASSAPP/files/app/tns_modules/nativescript-pro-ui/sidedrawer/sidedrawer.js, line: 103, column: 24
+
+StackTrace: 
+	Frame: function:'RadSideDrawer.initDrawer', file:'file:///data/data/org.nativescript.TIASSAPP/files/app/tns_modules/nativescript-pro-ui/sidedrawer/sidedrawer.js', line: 103, column: 25
+	Frame: function:'RadSideDrawer.createNativeView', file:'file:///data/data/org.nativescript.TIASSAPP/files/app/tns_modules/nativescript-pro-ui/sidedrawer/sidedrawer.js', line: 171, column: 14
+	Frame: function:'ViewBase._setupUI', file:'file:///data/data/org.nativescript.TIASSAPP/files/app/tns_modules/tns-core-modules/ui/core/view-base/view-base.js', line: 412, column: 35
+	Frame: function:'', file:'file:///data/data/org.nativescript.TIASSAPP/files/app/tns_modules/
+-->

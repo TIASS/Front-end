@@ -1,0 +1,38 @@
+
+<ScrollView sdkExampleTitle sdkToggleNavButton>
+  
+  <StackLayout #container> 
+    <Image src="res://logo_login" stretch="none" horizontalAlignment="center"></Image>
+    
+
+    <TextField hint="Email Address saa" keyboardType="email" [(ngModel)]="signinData.email"
+        autocorrect="false" autocapitalizationType="none"></TextField>
+    <TextField hint="Password" secure="true" [(ngModel)]="signinData.pswrd"></TextField>
+
+    <TextField hint="Name" [(ngModel)]="signinData.name" autocorrect="true" ></TextField>
+    
+    <GridLayout rows="auto auto" columns="* *" class="m-5">
+      <Label class="h3 m-15" [text]="'I am a Woman'" textWrap="true" row="0" col="0"></Label>
+      <Switch class="m-15" #femaleSwitch checked="true" (checkedChange)="setAsWoman($event)" row="0" col="1"></Switch>
+      <Label class="h3 m-15" [text]="'I am a Man'" textWrap="true" row="1" col="0"></Label>
+      <Switch class="m-15" #maleSwitch checked="false" (checkedChange)="setAsMan($event)" row="1" col="1"></Switch>
+    </GridLayout>
+    <GridLayout rows="auto auto" columns="* *" class="m-5">
+      <Label class="h3 m-15" [text]="'I Have a Shop'" textWrap="true" row="0" col="0"></Label>
+      <Switch class="m-15" hint="I Have a Shop" checked="false" (checkedChange)="setHasShop($event)" row="0" col="1"></Switch>
+    </GridLayout> 
+
+    <ListView [items]="errors" (tap)="dismissErros($event)" class="list-group">
+      <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
+          <GridLayout class="list-group-item">
+              <Label [text]="item"></Label>
+          </GridLayout>
+      </ng-template>
+  </ListView>
+ 
+
+    <Button [text]="'Sign up'" class="submit-button" (tap)="submit()"></Button>
+    <Button [text]="'Back to login'" (tap)="displayLogin()"></Button>
+  </StackLayout>
+  
+</ScrollView>
